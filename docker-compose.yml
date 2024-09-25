@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  server:
+    build: .
+    command: sleep infinity
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/var/data
+    environment:
+      - PORT=3080
+    networks:
+      - my-docker-network
+networks:
+  my-docker-network:
+    driver: bridge

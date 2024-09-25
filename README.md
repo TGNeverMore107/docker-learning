@@ -88,3 +88,20 @@ docker run -d -v C:\Users\myPC\Desktop\devops\docker\data:/var/data gitdocker sl
 ```
 docker run -e NODE_ENV=production -e PORT=3000 my-node-app
 ```
+
+### docker compose
+### docker compose build: build tất cả các image được định nghĩa trong `docker-compose.yml`
+```
+docker-compose build
+```
+### docker compose up -d: sẽ thực hiện run các image đã build từ file `docker-compose.yml` thành container
+```
+
+```
+
+### docker compose down: remove tất cả container được định nghĩa trong `docker-compose.yml`
+
+
+### docker compose exec: exicute vào command được định nghĩa trong image
+
+- Example: docker-compose exec <container_name> <command>
